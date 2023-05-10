@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* body tag selector */
+body {
+    background-color: #d9dcd6;
+}
+
+/* header class selector */
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+/* selector that affects the h1 (largest header) part of header class */
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+/* in next three selectors, div was changed to nav (semantic) */
+/* selector that affects nav elements inside header class */
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+/* selector that affects ul elements which is the child of nav inside header class */
+.header nav ul {
+    list-style-type: none;
+}
+
+/* selector that affects li elements which is the child of ul which is the child of nav inside header class */
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* selector that affects the presentation of the menu items that appear at the top of the page (when they are clicked on, they jump to their corresponding paragraphs on the page) */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
