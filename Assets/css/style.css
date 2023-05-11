@@ -1,4 +1,6 @@
 * {
+    display: flex;
+    flex-wrap: wrap;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -50,10 +52,26 @@ a {
     text-decoration: none;
 }
 
-figure {
-    /* width: 100%;
-    margin-bottom: 25px; */
-    background-image: url("tropical-palm-leaves-pattern-background-green-monstera-tree-foliage-decoration-design-plant-with-exotic-leaf-closeup.jpg");
-    /* background-size: cover;
-    background-position: center; */
+/* .thingy {
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../Images/tropical-palm-leaves-pattern-background-green-monstera-tree-foliage-decoration-design-plant-with-exotic-leaf-closeup.jpg");
+    background-size: cover;
+    background-position: center;
+} */
+
+#thingy {
+    height: 300px;
+    background-color: #cccccc;
+    background-image: linear-gradient(blue, turquoise);
+}
+
+.about-me {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
 }
