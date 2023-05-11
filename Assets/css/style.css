@@ -13,6 +13,7 @@ body {
 
 /* header class selector */
 .header {
+    /* width: 100%; */
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
@@ -21,6 +22,7 @@ body {
 
 /* selector that affects the h1 (largest header) part of header class */
 .header h1 {
+    width: 20%;
     display: inline-block;
     font-size: 48px;
 }
@@ -28,9 +30,11 @@ body {
 /* in next three selectors, div was changed to nav (semantic) */
 /* selector that affects nav elements inside header class */
 .header nav {
+    width: 80%;
     padding-top: 15px;
     margin-right: 20px;
     float: right;
+    width: 40%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
@@ -66,8 +70,19 @@ a {
     background-image: linear-gradient(blue, turquoise);
 }
 
-.about-me {
-    display: inline-block;
+.about-me h2 {
+    float: left;
+    width: 20%;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #0072bb;
+    background-color: #ffffff;
+}
+
+.about-me p {
+    /* display: inline-block; */
+    width: 80%;
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -75,3 +90,16 @@ a {
     background-color: #0072bb;
     color: #ffffff;
 }
+
+figure.thingy2 {
+    /* display: inline-block; */
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 50px;
+    /* width: max-content; */
+    width: 600px;
+    height: 600px;
+    background-image: url("../Images/Accessible_SEO_Website_Part_1_of_3_cropped.jpg");
+    border: 10px solid aquamarine;
+}
+
