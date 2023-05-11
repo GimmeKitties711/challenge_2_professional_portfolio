@@ -49,3 +49,11 @@ a {
     color: #ffffff;
     text-decoration: none;
 }
+
+figure {
+    /* width: 100%;
+    margin-bottom: 25px; */
+    background-image: url("tropical-palm-leaves-pattern-background-green-monstera-tree-foliage-decoration-design-plant-with-exotic-leaf-closeup.jpg");
+    /* background-size: cover;
+    background-position: center; */
+}
