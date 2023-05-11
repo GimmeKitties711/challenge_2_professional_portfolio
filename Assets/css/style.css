@@ -13,7 +13,8 @@ body {
 
 /* header class selector */
 .header {
-    /* width: 100%; */
+    width: 100%;
+    height: 100px;
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
@@ -56,14 +57,6 @@ a {
     text-decoration: none;
 }
 
-/* .thingy {
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../Images/tropical-palm-leaves-pattern-background-green-monstera-tree-foliage-decoration-design-plant-with-exotic-leaf-closeup.jpg");
-    background-size: cover;
-    background-position: center;
-} */
-
 #thingy {
     height: 300px;
     background-color: #cccccc;
@@ -91,15 +84,66 @@ a {
     color: #ffffff;
 }
 
-figure.thingy2 {
-    /* display: inline-block; */
-    text-align: center;
+figure.thingy1 {
     margin-bottom: 20px;
     padding: 50px;
     /* width: max-content; */
     width: 600px;
     height: 600px;
-    background-image: url("../Images/Accessible_SEO_Website_Part_1_of_3_cropped.jpg");
+    background-image: url("../Images/prework_study_guide.jpg");
     border: 10px solid aquamarine;
 }
 
+figure.thingy2 {
+    display: block;
+    /* text-align: center; */
+    margin-bottom: 20px;
+    padding: 50px;
+    /* width: max-content; */
+    width: 300px;
+    height: 300px;
+    background-image: url("../Images/accessible_seo_website.jpg");
+    border: 10px solid aquamarine;
+}
+
+/* section.thingy3 {
+    min-height: 300px;
+    min-width: 300px;
+} */
+
+.footer {
+    width: 100%;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+.footer h1 {
+    width: 20%;
+    display: inline-block;
+    font-size: 48px;
+}
+
+/* in next three selectors, div was changed to nav (semantic) */
+/* selector that affects nav elements inside header class */
+.footer nav {
+    width: 80%;
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    width: 40%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+/* selector that affects ul elements which is the child of nav inside header class */
+.footer nav ul {
+    list-style-type: none;
+}
+
+/* selector that affects li elements which is the child of ul which is the child of nav inside header class */
+.footer nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
