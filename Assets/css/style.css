@@ -6,12 +6,14 @@
     margin: 0;
 }
 
-/* body tag selector */
+.boo {
+    display: none;
+}
+
 body {
     background-color: #d9dcd6;
 }
 
-/* header class selector */
 .header {
     width: 100%;
     height: 100px;
@@ -21,15 +23,12 @@ body {
     color: #ffffff;
 }
 
-/* selector that affects the h1 (largest header) part of header class */
 .header h1 {
     width: 20%;
     display: inline-block;
-    font-size: 48px;
+    font-size: 36px;
 }
 
-/* in next three selectors, div was changed to nav (semantic) */
-/* selector that affects nav elements inside header class */
 .header nav {
     width: 80%;
     padding-top: 15px;
@@ -40,18 +39,15 @@ body {
     font-size: 20px;
 }
 
-/* selector that affects ul elements which is the child of nav inside header class */
 .header nav ul {
     list-style-type: none;
 }
 
-/* selector that affects li elements which is the child of ul which is the child of nav inside header class */
 .header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
-/* selector that affects the presentation of the menu items that appear at the top of the page (when they are clicked on, they jump to their corresponding paragraphs on the page) */
 a {
     color: #ffffff;
     text-decoration: none;
@@ -61,6 +57,8 @@ a {
     height: 300px;
     background-color: #cccccc;
     background-image: linear-gradient(blue, turquoise);
+    background-size: cover;
+    width: 100%;
 }
 
 .about-me h2 {
@@ -74,7 +72,7 @@ a {
 }
 
 .about-me p {
-    /* display: inline-block; */
+    
     width: 80%;
     margin-bottom: 20px;
     padding: 50px;
@@ -87,7 +85,7 @@ a {
 figure.thingy1 {
     margin-bottom: 20px;
     padding: 50px;
-    /* width: max-content; */
+    
     width: 600px;
     height: 600px;
     background-image: url("../Images/prework_study_guide.jpg");
@@ -96,20 +94,56 @@ figure.thingy1 {
 
 figure.thingy2 {
     display: block;
-    /* text-align: center; */
+    
     margin-bottom: 20px;
     padding: 50px;
-    /* width: max-content; */
+    
     width: 300px;
     height: 300px;
     background-image: url("../Images/accessible_seo_website.jpg");
     border: 10px solid aquamarine;
 }
 
-/* section.thingy3 {
-    min-height: 300px;
-    min-width: 300px;
-} */
+h2 {
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+    margin: 10px;
+}
+
+.my-projects {
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    z-index: 1;
+}
+
+#prework-study-guide {
+    background-image: url("../Images/prework_study_guide.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+}
+
+#accessible-seo-website {
+    background: url("../Images/accessible_seo_website.jpg");
+    background-size: cover;
+    width: 50%;
+    height: 50vh;
+}
+
+#future-projects {
+    background: url("../Images/project_in_development.jpg");
+    background-size: cover;
+    width: 50%;
+    height: 50vh;
+}
+
+.thingy5 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgba(55, 55, 55, 1);
+    color: green;
+}
 
 .footer {
     width: 100%;
@@ -122,11 +156,9 @@ figure.thingy2 {
 .footer h1 {
     width: 20%;
     display: inline-block;
-    font-size: 48px;
+    font-size: 36px;
 }
 
-/* in next three selectors, div was changed to nav (semantic) */
-/* selector that affects nav elements inside header class */
 .footer nav {
     width: 80%;
     padding-top: 15px;
@@ -137,12 +169,10 @@ figure.thingy2 {
     font-size: 20px;
 }
 
-/* selector that affects ul elements which is the child of nav inside header class */
 .footer nav ul {
     list-style-type: none;
 }
 
-/* selector that affects li elements which is the child of ul which is the child of nav inside header class */
 .footer nav ul li {
     display: inline-block;
     margin-left: 25px;
