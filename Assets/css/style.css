@@ -1,3 +1,9 @@
+:root {
+    --bg_color: #ffb83d;
+    --text_color: #711d0d;
+    --border_color: #79483f;
+}
+
 .boo {
     display: none;
 }
@@ -44,18 +50,27 @@ body {
     margin-left: 25px;
 }
 
-a {
+.wooo {
     color: #ffffff;
     text-decoration: none;
 }
 
 #thingy {
+    display: flex;
     height: 300px;
     background-color: #cccccc;
     background-image: linear-gradient(blue, turquoise);
     background-size: cover;
     width: 100%;
     margin: 0px;
+    justify-content: center;
+}
+
+#profile-pic {
+    display: flex;
+    /* margin-left: auto;
+    margin-right: auto; */
+    
 }
 
 .about-me h2 {
@@ -153,10 +168,12 @@ h2 {
 .yee {
     display: flex;
     max-width: 100%;
+    text-indent: 20px;
 }
 
 .yee2 {
     display: block;
+    text-indent: 20px;
 }
 
 .yeehaw {
@@ -172,26 +189,39 @@ h2 {
     border: 5px solid #79483f;
 }
 
+.yeahboi {
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color: var(--bg_color);
+    text-decoration:underline;
+    font-weight: bold;
+    text-shadow: 3px 3px 1px black;
+}
+
 .yeti {
     display: block;
-    background: url("../Images/challenge_0_thumbnail.png");
+    background-repeat: no-repeat;
+    background: url("../Images/title_background_big.png") no-repeat, url("../Images/challenge_0_thumbnail.png");
     width: 690px;
     height: 690px;
-    border: 5px solid #79483f;
+    border: 5px solid var(--border_color);
 }
 
 .yeti2 {
-    background: url("../Images/challenge_1_thumbnail.png");
+    background-repeat: no-repeat;
+    background: url("../Images/title_background_small.png") no-repeat, url("../Images/challenge_1_thumbnail.png");
     width: 340px;
     height: 340px;
-    border: 5px solid #79483f;
+    border: 5px solid var(--border_color);
 }
 
 .yeti3 {
-    background: url("../Images/projects_in_progress_thumbnail.png");
+    background-repeat: no-repeat;
+    background: url("../Images/title_background_small.png") no-repeat, url("../Images/projects_in_progress_thumbnail.png");
     width: 340px;
     height: 340px;
-    border: 5px solid #79483f;
+    border: 5px solid var(--border_color);
 }
 
 .footer {
