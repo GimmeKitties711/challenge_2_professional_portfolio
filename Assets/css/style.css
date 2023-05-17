@@ -2,14 +2,16 @@
     --bg_color: #ffb83d;
     --text_color: #711d0d;
     --border_color: #79483f;
-}
-
-.boo {
-    display: none;
+    --font_family_1: 'Lucida Sans', Arial, 'Lucida Sans Unicode', 'Lucida Grande', 'Trebuchet MS', sans-serif;
+    --font_family_2: 'Gill Sans MT', 'Gill Sans', 'Trebuchet MS', Calibri, sans-serif;
+    --about_me_height: 200px;
+    --big_section_width: 700px;
+    --small_section_width: 350px;
+    --border_width: 5px;
 }
 
 body {
-    background-color: #d9dcd6;
+    background-color: wheat;
     margin: 0px;
 }
 
@@ -18,9 +20,9 @@ body {
     justify-content: space-between;
     width: 100%;
     height: 100px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
+    font-family: var(--font_family_1);
+    background-color: var(--bg_color);
+    color: var(--text_color);
 }
 
 .header h1 {
@@ -35,7 +37,7 @@ body {
     padding-top: 15px;
     float: right;
     width: 40%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--font_family_2);
     font-size: 20px;
 }
 
@@ -50,185 +52,117 @@ body {
     margin-left: 25px;
 }
 
-.wooo {
-    color: #ffffff;
+.top-menu {
+    color: var(--text_color);
     text-decoration: none;
 }
 
-#thingy {
+#banner {
     display: flex;
     height: 300px;
-    background-color: #cccccc;
-    background-image: linear-gradient(blue, turquoise);
+    background-image: linear-gradient(var(--text_color), var(--bg_color));
     background-size: cover;
     width: 100%;
     margin: 0px;
-    justify-content: center;
+
+    justify-content: center; /* centers profile pic */
 }
 
-#profile-pic {
-    display: flex;
-    /* margin-left: auto;
-    margin-right: auto; */
-    
-}
-
-.about-me h2 {
-    width: 20%;
-    margin: 0px;
-    padding: 50px;
-    height: 190px;
-    font-size: 60px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #0072bb;
-    background-color: #ffffff;
-    border: 5px solid #79483f;
-}
-
-.about-me p {
-    
-    width: 80%;
-    margin: 0px;
-    padding: 50px;
-    height: 200px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.about-me {
+.about-me-section { /* named class this way to not have exact same name as id (about-me) */
     display:flex;
 }
 
-figure.thingy1 {
-    margin-bottom: 20px;
+.about-me-section h2 {
+    width: 20%;
+    height: calc(var(--about_me_height) - 2*var(--border_width));
+
     padding: 50px;
+    border: var(--border_width) solid var(--border_color);
+    margin: 0px;
     
-    width: 600px;
-    height: 600px;
-    background-image: url("../Images/prework_study_guide.jpg");
-    border: 10px solid aquamarine;
+    font-size: 60px;
+    font-family: var(--font_family_2);
+    color: var(--bg_color);
+    background-color: var(--text_color); /* for the areas that show the titles of sections, I have decided to invert the text and background colors */
+    
 }
 
-figure.thingy2 {
+.about-me-section p {
+    width: 80%;
+    height: calc(var(--about_me_height) - 2*var(--border_width));
+
+    padding: 50px;
+    border: var(--border_width) solid var(--border_color);
+    margin: 0px;
+
+    font-family: var(--font_family_2);
+    color: var(--text_color);
+    background-color: var(--bg_color);
+}
+
+.title-project-0 {
     display: block;
-    
-    margin-bottom: 20px;
-    padding: 50px;
-    
-    width: 300px;
-    height: 300px;
-    background-image: url("../Images/accessible_seo_website.jpg");
-    border: 10px solid aquamarine;
+    text-indent: 20px;
 }
 
-/*
-h2 {
-    text-align: center;
-    justify-content: center;
-    font-size: 50px;
-    margin: 10px;
-}
-*/
-
-.my-projects {
-    font-size: 40px;
-    font-weight: bolder;
-    text-align: center;
-    z-index: 1;
-}
-
-#prework-study-guide {
-    background-image: url("../Images/prework_study_guide.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 50vh;
-}
-
-#accessible-seo-website {
-    background: url("../Images/accessible_seo_website.jpg");
-    background-size: cover;
-    width: 50%;
-    height: 50vh;
-}
-
-#future-projects {
-    background: url("../Images/project_in_development.jpg");
-    background-size: cover;
-    width: 50%;
-    height: 50vh;
-}
-
-.thingy5 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgba(55, 55, 55, 1);
-    color: green;
-}
-
-.yee {
+.project-1-2 {
     display: flex;
     max-width: 100%;
     text-indent: 20px;
 }
 
-.yee2 {
-    display: block;
-    text-indent: 20px;
-}
-
-.yeehaw {
-    width: 640px;
-    padding-left: 50px;
+.title-settings {
+    width: calc(var(--big_section_width) - 30px - 2*var(--border_width));
+    padding-left: 30px;
     padding-top: 50px;
     margin: 0px;
     height: 120px;
     font-size: 60px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #0072bb;
-    background-color: #ffffff;
-    border: 5px solid #79483f;
+    font-family: var(--font_family_2);
+    color: var(--bg_color);
+    background-color: var(--text_color);
+    /* for the areas that show the titles of sections, I have decided to invert the text and background colors */
+    border: var(--border_width) solid var(--border_color);
 }
 
-.yeahboi {
+.project-text-settings {
     text-align: left;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--font_family_2);
     font-size: 30px;
     color: var(--bg_color);
-    text-decoration:underline;
+    text-decoration: underline;
     font-weight: bold;
     text-shadow: 3px 3px 1px black;
 }
 
-.yeti {
+.project-0 {
     display: block;
-    background-repeat: no-repeat;
     background: url("../Images/title_background_big.png") no-repeat, url("../Images/challenge_0_thumbnail.png");
-    width: 690px;
-    height: 690px;
-    border: 5px solid var(--border_color);
+    width: calc(var(--big_section_width) - 2*var(--border_width));
+    height: calc(var(--big_section_width) - 2*var(--border_width));
+    border: var(--border_width) solid var(--border_color);
 }
 
-.yeti2 {
-    background-repeat: no-repeat;
+.project-1 {
     background: url("../Images/title_background_small.png") no-repeat, url("../Images/challenge_1_thumbnail.png");
-    width: 340px;
-    height: 340px;
-    border: 5px solid var(--border_color);
+    width: calc(var(--small_section_width) - 2*var(--border_width));
+    height: calc(var(--small_section_width) - 2*var(--border_width));
+    border: var(--border_width) solid var(--border_color);
 }
 
-.yeti3 {
-    background-repeat: no-repeat;
+.project-2 {
     background: url("../Images/title_background_small.png") no-repeat, url("../Images/projects_in_progress_thumbnail.png");
-    width: 340px;
-    height: 340px;
-    border: 5px solid var(--border_color);
+    width: calc(var(--small_section_width) - 2*var(--border_width));
+    height: calc(var(--small_section_width) - 2*var(--border_width));
+    border: var(--border_width) solid var(--border_color);
 }
 
 .footer {
+    display: flex;
     width: 100%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
+    font-family: var(--font_family_1);
+    background-color: var(--bg_color);
+    color: var(--text_color);
 }
 
 .footer h3 {
@@ -243,7 +177,7 @@ h2 {
     float: right;
     width: 70%;
     margin-right: 15px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--font_family_2);
     font-size: 20px;
 }
 
