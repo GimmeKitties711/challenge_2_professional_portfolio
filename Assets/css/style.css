@@ -2,20 +2,21 @@
     --bg_color: #ffb83d;
     --text_color: #711d0d;
     --border_color: #79483f;
+    /* colors were obtained from a hex code randomizer: https://www.random.org/colors/hex */
     --font_family_1: 'Lucida Sans', Arial, 'Lucida Sans Unicode', 'Lucida Grande', 'Trebuchet MS', sans-serif;
     --font_family_2: 'Gill Sans MT', 'Gill Sans', 'Trebuchet MS', Calibri, sans-serif;
+    /* font families are from challenge 1 but they have been randomized to not be the exact same. sans-serif has been left as the last font because it is a default font for browsers. source for the randomizer: https://www.randomlists.com/random-numbers. */
     --about_me_height: 200px;
     --big_section_width: 700px;
     --small_section_width: 350px;
     --border_width: 5px;
+    /* created these variables because some of them are used many times throughout this document (especially the font families) */
 }
-/* organized */
 
 body {
-    background-color: wheat;
-    margin: 0px;
+    background-color: wheat; /* selected a background color that fits in well with the rest of the page */
+    margin: 0px; /* for everywhere that says "margin: 0px", this line is needed to override the browser's default margin settings, which prevented components on the page from fitting together nicely. "margin: 0px" is also used in #banner, .about-me-section h2, .about-me-section p, and .title-settings. */
 }
-/* organized */
 
 .header {
     display: flex;
@@ -23,50 +24,44 @@ body {
     height: 100px;
     justify-content: space-between;
 
-    font-family: var(--font_family_1);
+    font-family: var(--font_family_1); /* for the sections of the page that show important titles (header, About Me, Projects, footer) font_family_1 is used. otherwise font_family_2 is used. */
     color: var(--text_color);
     background-color: var(--bg_color);
 }
-/* organized */
 
 .header h1 {
     display: inline-block;
     width: 20%;
     margin-left: 40px;
-    margin-top: 20px;
+    margin-top: 20px; /* for the font size that I have chosen for my name, I used these margins to make my name centered vertically and not too close to the left of the screen. the same margin_left is used in .footer h3. */
 
     font-size: 48px;
 }
-/* organized */
 
 .header nav {
     float: right;
     width: 40%;
-    padding-top: 15px;
+    padding-top: 15px; /* pushes the nav box down from the top of the screen so the top menu items are centered vertically */
 
     font-size: 20px;
     font-family: var(--font_family_2);
 }
-/* organized */
 
 .header nav ul {
     display: flex;
     justify-content: end;
     width: 80%;
 }
-/* organized */
 
 .header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
-/* organized */
 
 .top-menu {
-    color: var(--text_color);
+    color: var(--text_color); /* makes the top menu items the same color as the rest of the text on the page */
     text-decoration: none;
 }
-/* organized */
 
 #banner {
     display: flex;
@@ -79,16 +74,15 @@ body {
 
     justify-content: center; /* centers profile pic */
 }
-/* organized */
 
 .about-me-section { /* named class this way to not have exact same name as id (about-me) */
     display:flex;
 }
-/* organized */
 
 .about-me-section h2 {
     width: 20%;
     height: calc(var(--about_me_height) - 2*var(--border_width));
+    /* about_me_height is 200px, I want the section height to be 190px so the total height can be 300px (190px + 2*padding + 2*border_width = 190px + 100px + 10px = 300px). the same is true for the next selector, .about-me-section p. */
 
     padding: 50px;
     border: var(--border_width) solid var(--border_color);
@@ -98,9 +92,7 @@ body {
     font-family: var(--font_family_1);
     color: var(--bg_color);
     background-color: var(--text_color); /* for the areas that show the titles of sections, I have decided to invert the text and background colors */
-    
 }
-/* organized */
 
 .about-me-section p {
     width: 80%;
@@ -114,26 +106,23 @@ body {
     color: var(--text_color);
     background-color: var(--bg_color);
 }
-/* organized */
 
 .title-project-0 {
-    display: block;
+    display: block; /* display is block because I want the Projects title card and the Project 0 card to be on top of each other */
     text-indent: 20px;
 }
-/* organized */
 
 .project-1-2 {
-    display: flex;
+    display: flex; /* display is flex because I want the Project 1 card and the Project 2 card to be next to each other */
     max-width: 100%;
     text-indent: 20px;
 }
-/* organized */
 
 .title-settings {
-    width: calc(var(--big_section_width) - 30px - 2*var(--border_width));
+    width: calc(var(--big_section_width) - 30px - 2*var(--border_width)); /* calculation of width for .title-settings is similar to calculation of height for .about-me-section (h2, p) but this time, padding_left is taken into account as well */
     height: 120px;
 
-    padding-left: 30px;
+    padding-left: 30px; /* makes titles line up on the left in the About Me and Projects cards */
     padding-top: 50px;
     border: var(--border_width) solid var(--border_color);
     margin: 0px;
@@ -144,9 +133,8 @@ body {
     background-color: var(--text_color);
     /* for the areas that show the titles of sections, I have decided to invert the text and background colors */
 }
-/* organized */
 
-.project-text-settings {
+.project-text-settings { /* determines text settings for the titles at the top of the project cards */
     text-align: left;
     text-shadow: 3px 3px 1px black;
     text-decoration: underline;
@@ -156,26 +144,24 @@ body {
     font-family: var(--font_family_2);
     color: var(--bg_color);
 }
-/* organized */
 
 .project-0 {
     display: block;
     background: url("../Images/title_background_big.png") no-repeat, url("../Images/challenge_0_thumbnail.png");
-    
+    /* source for multiple backgrounds in css: https://www.w3schools.com/css/css3_backgrounds.asp */
+
     width: calc(var(--big_section_width) - 2*var(--border_width));
-    height: calc(var(--big_section_width) - 2*var(--border_width));
+    height: calc(var(--big_section_width) - 2*var(--border_width)); /* big_section_width is 700px, I want width and height to be 690 px so total width and height can be 690 px + 2* border_width = 690px + 10px = 700px */
     border: var(--border_width) solid var(--border_color);
 }
-/* organized */
 
 .project-1 {
     background: url("../Images/title_background_small.png") no-repeat, url("../Images/challenge_1_thumbnail.png");
     
     width: calc(var(--small_section_width) - 2*var(--border_width));
-    height: calc(var(--small_section_width) - 2*var(--border_width));
+    height: calc(var(--small_section_width) - 2*var(--border_width)); /* small_section_width is 350px, I want width and height to be 340 px so total width and height can be 340 px + 2* border_width = 340px + 10px = 350px. the same is true for the next selector, project-2. */
     border: var(--border_width) solid var(--border_color);
 }
-/* organized */
 
 .project-2 {
     background: url("../Images/title_background_small.png") no-repeat, url("../Images/projects_in_progress_thumbnail.png");
@@ -184,7 +170,6 @@ body {
     height: calc(var(--small_section_width) - 2*var(--border_width));
     border: var(--border_width) solid var(--border_color);
 }
-/* organized */
 
 .footer {
     display: flex;
@@ -194,38 +179,37 @@ body {
     color: var(--text_color);
     background-color: var(--bg_color);
 }
-/* organized */
 
 .footer h3 {
     display: inline-block;
     width: 25%;
 
     margin-left: 40px;
-    font-size: 36px;
+    font-size: 36px; /* makes "Contact Me" in footer slightly smaller than my name in header */
 }
-/* organized */
 
 .footer nav {
     float: right;
     width: 70%;
 
-    padding-top: 25px;
-    margin-right: 15px;
+    padding-top: 25px; /* vertically centers nav box */
+    margin-right: 15px; /* pushes nav box away from right of screen */
 
     font-size: 20px;
     font-family: var(--font_family_2);
 }
-/* organized */
 
 .footer nav ul {
     display: flex;
     width: 90%;
     justify-content: end;
 }
-/* organized */
 
 .footer nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
-/* organized */
+
+.footer nav ul li a {
+    color: var(--text_color); /* makes all bottom menu items the same color and overrides browser's default color settings */
+}
