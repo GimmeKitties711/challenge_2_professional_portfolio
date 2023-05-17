@@ -9,68 +9,82 @@
     --small_section_width: 350px;
     --border_width: 5px;
 }
+/* organized */
 
 body {
     background-color: wheat;
     margin: 0px;
 }
+/* organized */
 
 .header {
     display: flex;
-    justify-content: space-between;
     width: 100%;
     height: 100px;
+    justify-content: space-between;
+
     font-family: var(--font_family_1);
-    background-color: var(--bg_color);
     color: var(--text_color);
+    background-color: var(--bg_color);
 }
+/* organized */
 
 .header h1 {
-    width: 20%;
     display: inline-block;
-    font-size: 48px;
+    width: 20%;
     margin-left: 40px;
     margin-top: 20px;
+
+    font-size: 48px;
 }
+/* organized */
 
 .header nav {
-    padding-top: 15px;
     float: right;
     width: 40%;
-    font-family: var(--font_family_2);
+    padding-top: 15px;
+
     font-size: 20px;
+    font-family: var(--font_family_2);
 }
+/* organized */
 
 .header nav ul {
     display: flex;
     justify-content: end;
     width: 80%;
 }
+/* organized */
 
 .header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
+/* organized */
 
 .top-menu {
     color: var(--text_color);
     text-decoration: none;
 }
+/* organized */
 
 #banner {
     display: flex;
     height: 300px;
-    background-image: linear-gradient(var(--text_color), var(--bg_color));
-    background-size: cover;
     width: 100%;
     margin: 0px;
 
+    background-image: linear-gradient(var(--text_color), var(--bg_color));
+    background-size: cover;
+
     justify-content: center; /* centers profile pic */
 }
+/* organized */
 
 .about-me-section { /* named class this way to not have exact same name as id (about-me) */
     display:flex;
 }
+/* organized */
 
 .about-me-section h2 {
     width: 20%;
@@ -81,11 +95,12 @@ body {
     margin: 0px;
     
     font-size: 60px;
-    font-family: var(--font_family_2);
+    font-family: var(--font_family_1);
     color: var(--bg_color);
     background-color: var(--text_color); /* for the areas that show the titles of sections, I have decided to invert the text and background colors */
     
 }
+/* organized */
 
 .about-me-section p {
     width: 80%;
@@ -99,95 +114,118 @@ body {
     color: var(--text_color);
     background-color: var(--bg_color);
 }
+/* organized */
 
 .title-project-0 {
     display: block;
     text-indent: 20px;
 }
+/* organized */
 
 .project-1-2 {
     display: flex;
     max-width: 100%;
     text-indent: 20px;
 }
+/* organized */
 
 .title-settings {
     width: calc(var(--big_section_width) - 30px - 2*var(--border_width));
+    height: 120px;
+
     padding-left: 30px;
     padding-top: 50px;
+    border: var(--border_width) solid var(--border_color);
     margin: 0px;
-    height: 120px;
+
     font-size: 60px;
-    font-family: var(--font_family_2);
+    font-family: var(--font_family_1);
     color: var(--bg_color);
     background-color: var(--text_color);
     /* for the areas that show the titles of sections, I have decided to invert the text and background colors */
-    border: var(--border_width) solid var(--border_color);
 }
+/* organized */
 
 .project-text-settings {
     text-align: left;
-    font-family: var(--font_family_2);
-    font-size: 30px;
-    color: var(--bg_color);
-    text-decoration: underline;
-    font-weight: bold;
     text-shadow: 3px 3px 1px black;
+    text-decoration: underline;
+
+    font-size: 30px;
+    font-weight: bold;
+    font-family: var(--font_family_2);
+    color: var(--bg_color);
 }
+/* organized */
 
 .project-0 {
     display: block;
     background: url("../Images/title_background_big.png") no-repeat, url("../Images/challenge_0_thumbnail.png");
+    
     width: calc(var(--big_section_width) - 2*var(--border_width));
     height: calc(var(--big_section_width) - 2*var(--border_width));
     border: var(--border_width) solid var(--border_color);
 }
+/* organized */
 
 .project-1 {
     background: url("../Images/title_background_small.png") no-repeat, url("../Images/challenge_1_thumbnail.png");
+    
     width: calc(var(--small_section_width) - 2*var(--border_width));
     height: calc(var(--small_section_width) - 2*var(--border_width));
     border: var(--border_width) solid var(--border_color);
 }
+/* organized */
 
 .project-2 {
     background: url("../Images/title_background_small.png") no-repeat, url("../Images/projects_in_progress_thumbnail.png");
+    
     width: calc(var(--small_section_width) - 2*var(--border_width));
     height: calc(var(--small_section_width) - 2*var(--border_width));
     border: var(--border_width) solid var(--border_color);
 }
+/* organized */
 
 .footer {
     display: flex;
     width: 100%;
+    
     font-family: var(--font_family_1);
-    background-color: var(--bg_color);
     color: var(--text_color);
+    background-color: var(--bg_color);
 }
+/* organized */
 
 .footer h3 {
-    width: 25%;
     display: inline-block;
-    font-size: 36px;
+    width: 25%;
+
     margin-left: 40px;
+    font-size: 36px;
 }
+/* organized */
 
 .footer nav {
-    padding-top: 25px;
     float: right;
     width: 70%;
+
+    padding-top: 25px;
     margin-right: 15px;
-    font-family: var(--font_family_2);
+
     font-size: 20px;
+    font-family: var(--font_family_2);
 }
+/* organized */
 
 .footer nav ul {
     display: flex;
-    justify-content: end;
     width: 90%;
+    justify-content: end;
 }
+/* organized */
 
 .footer nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
+/* organized */
