@@ -21,7 +21,6 @@ body {
 .header {
     display: flex;
     width: 100%;
-    height: 100px;
     justify-content: space-between;
 
     font-family: var(--font_family_1); /* for the sections of the page that show important titles (header, About Me, Projects, footer) font_family_1 is used. otherwise font_family_2 is used. */
@@ -29,11 +28,6 @@ body {
     background-color: var(--bg_color);
 }
 
-@media only screen and (max-width: 1230px) {
-    .header {
-        height: 150px; /* header becomes taller once the screen becomes narrow enough that my name takes up two lines */
-    }
-}
 
 .header h1 {
     display: inline-block;
@@ -47,7 +41,7 @@ body {
 .header nav {
     float: right;
     width: 40%;
-    padding-top: 15px; /* pushes the nav box down from the top of the screen so the top menu items are centered vertically */
+    padding-top: 20px; /* pushes the nav box down from the top of the screen so the top menu items are centered vertically */
 
     font-size: 20px;
     font-family: var(--font_family_2);
@@ -86,6 +80,7 @@ body {
 }
 
 .about-me-section h2 {
+    display: flex;
     width: 20%;
     height: calc(var(--about_me_height) - 2*var(--border_width));
     /* about_me_height is 200px, I want the section height to be 190px so the total height can be 300px (190px + 2*padding + 2*border_width = 190px + 100px + 10px = 300px). the same is true for the next selector, .about-me-section p. */
@@ -123,14 +118,15 @@ body {
     /* overall height is 300px until the screen shrinks, which changes the overall height to (5.5*about_me_height - 2*border_width) + 2*padding + 2*border_width = 5.5*about_me_height + 2*padding = 5.5*200px + 2*50px = 1100px + 100px = 1200px. the About Me section needs to become this tall to fit all of the text on the screen when the screen shrinks to ~410px. this is the point where the text in the About Me paragraph is pushed down as far as it can go. */
 }
 
-.title-project-0 {
-    display: block; /* display is block because I want the Projects title card and the Project 0 card to be on top of each other */
-    text-indent: 20px;
-}
+/*
+sources that helped me understand media queries:
+ - how to use media queries (webpage): https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+ - how to use media queries (youtube video): https://www.youtube.com/watch?v=yU7jJ3NbPdA
+ - meaning of the word "only" in media queries: https://stackoverflow.com/questions/8549529/what-is-the-difference-between-screen-and-only-screen-in-media-queries
+*/
 
-.project-1-2 {
-    display: flex; /* display is flex because I want the Project 1 card and the Project 2 card to be next to each other */
-    max-width: 100%;
+.card-settings {
+    display: flex; /* this class is applied to the all of the divs. each individual div denotes a separate section. */
     text-indent: 20px;
 }
 
@@ -169,6 +165,13 @@ body {
     width: calc(var(--big_section_width) - 2*var(--border_width));
     height: calc(var(--big_section_width) - 2*var(--border_width)); /* big_section_width is 700px, I want width and height to be 690 px so total width and height can be 690 px + 2* border_width = 690px + 10px = 700px */
     border: var(--border_width) solid var(--border_color);
+}
+
+@media only screen and (max-width: 200px) {
+    .project-0 {
+        background: url("../Images/title_background_big_taller.png") no-repeat, url("../Images/challenge_0_thumbnail.png");
+        /* when the screen shrinks, the background image for the title of the big project card changes to a taller version as the text gets pushed down */
+    }
 }
 
 .project-1 {
