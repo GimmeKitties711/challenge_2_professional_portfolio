@@ -1,4 +1,4 @@
-# challenge_2_professional_portfolio
-A portfolio that currently shows the work I've done as a web developer.
-
-<a href="https://www.freepik.com/free-photo/tropical-palm-leaves-pattern-background-green-monstera-tree-foliage-decoration-design-plant-with-exotic-leaf-closeup_38121751.htm#query=leaf%20wallpaper&position=15&from_view=keyword&track=ais">Image by svstudioart</a> on Freepik
+# Challenge 2 - Professional Portfolio
+media queries - https://www.youtube.com/watch?v=yU7jJ3NbPdA
+media queries - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+meaning of only - https://stackoverflow.com/questions/8549529/what-is-the-difference-between-screen-and-only-screen-in-media-queries

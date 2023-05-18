@@ -29,6 +29,12 @@ body {
     background-color: var(--bg_color);
 }
 
+@media only screen and (max-width: 1230px) {
+    .header {
+        height: 150px; /* header becomes taller once the screen becomes narrow enough that my name takes up two lines */
+    }
+}
+
 .header h1 {
     display: inline-block;
     width: 20%;
@@ -107,6 +113,16 @@ body {
     background-color: var(--bg_color);
 }
 
+@media only screen and (max-width: 760px) {
+    .about-me-section h2 {
+        height: calc(5.5*var(--about_me_height) - 2*var(--border_width));
+    }
+    .about-me-section p {
+        height: calc(5.5*var(--about_me_height) - 2*var(--border_width));
+    }
+    /* overall height is 300px until the screen shrinks, which changes the overall height to (5.5*about_me_height - 2*border_width) + 2*padding + 2*border_width = 5.5*about_me_height + 2*padding = 5.5*200px + 2*50px = 1100px + 100px = 1200px. the About Me section needs to become this tall to fit all of the text on the screen when the screen shrinks to ~410px. this is the point where the text in the About Me paragraph is pushed down as far as it can go. */
+}
+
 .title-project-0 {
     display: block; /* display is block because I want the Projects title card and the Project 0 card to be on top of each other */
     text-indent: 20px;
@@ -169,6 +185,16 @@ body {
     width: calc(var(--small_section_width) - 2*var(--border_width));
     height: calc(var(--small_section_width) - 2*var(--border_width));
     border: var(--border_width) solid var(--border_color);
+}
+
+@media only screen and (max-width: 480px) {
+    .project-1 {
+        background: url("../Images/title_background_small_taller.png") no-repeat, url("../Images/challenge_1_thumbnail.png");
+    }
+    .project-2 {
+        background: url("../Images/title_background_small_taller.png") no-repeat, url("../Images/projects_in_progress_thumbnail.png");
+    }
+    /* when the screen shrinks, the background image for the titles of the small project cards changes to a taller version as the text gets pushed down */
 }
 
 .footer {
