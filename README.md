@@ -16,7 +16,7 @@ The following screenshots show the website's appearance:
 ![Professional Portfolio (2 of 3)](Assets/Images/professional_portfolio_2_of_3.png)
 ![Professional Portfolio (3 of 3)](Assets/Images/professional_portfolio_3_of_3.png)
 
-The deployed website can be [found here](fill in later).
+The deployed website can be [found here]().
 
 ## Credits
 
