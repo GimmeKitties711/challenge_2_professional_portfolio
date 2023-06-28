@@ -157,7 +157,7 @@ sources that helped me understand media queries:
     color: var(--bg_color);
 }
 
-.project-0 {
+.challenge-0 {
     display: block;
     background: url("../Images/title_background_big.png") no-repeat, url("../Images/challenge_0_thumbnail.png");
     /* source for multiple backgrounds in css: https://www.w3schools.com/css/css3_backgrounds.asp */
@@ -168,13 +168,13 @@ sources that helped me understand media queries:
 }
 
 @media only screen and (max-width: 200px) {
-    .project-0 {
+    .challenge-0 {
         background: url("../Images/title_background_big_taller.png") no-repeat, url("../Images/challenge_0_thumbnail.png");
         /* when the screen shrinks, the background image for the title of the big project card changes to a taller version as the text gets pushed down */
     }
 }
 
-.project-1 {
+.challenge-1 {
     background: url("../Images/title_background_small.png") no-repeat, url("../Images/challenge_1_thumbnail.png");
     
     width: calc(var(--small_section_width) - 2*var(--border_width));
@@ -182,7 +182,23 @@ sources that helped me understand media queries:
     border: var(--border_width) solid var(--border_color);
 }
 
-.project-2 {
+.challenge-3 {
+    background: url("../Images/title_background_small.png") no-repeat, url("../Images/challenge_3_thumbnail.png");
+
+    width: calc(var(--small_section_width) - 2*var(--border_width));
+    height: calc(var(--small_section_width) - 2*var(--border_width));
+    border: var(--border_width) solid var(--border_color);
+}
+
+.project-1 {
+    background: url("../Images/title_background_small.png") no-repeat, url("../Images/project_1_thumbnail.png");
+    
+    width: calc(var(--small_section_width) - 2*var(--border_width));
+    height: calc(var(--small_section_width) - 2*var(--border_width));
+    border: var(--border_width) solid var(--border_color);
+}
+
+.future-projects {
     background: url("../Images/title_background_small.png") no-repeat, url("../Images/projects_in_progress_thumbnail.png");
     
     width: calc(var(--small_section_width) - 2*var(--border_width));
@@ -190,11 +206,17 @@ sources that helped me understand media queries:
     border: var(--border_width) solid var(--border_color);
 }
 
-@media only screen and (max-width: 480px) {
-    .project-1 {
+@media only screen and (max-width: 600px) {
+    .challenge-1 {
         background: url("../Images/title_background_small_taller.png") no-repeat, url("../Images/challenge_1_thumbnail.png");
     }
-    .project-2 {
+    .challenge-3 {
+        background: url("../Images/title_background_small_taller.png") no-repeat, url("../Images/challenge_3_thumbnail.png");
+    }
+    .project-1 {
+        background: url("../Images/title_background_small_taller.png") no-repeat, url("../Images/project_1_thumbnail.png");
+    }
+    .future-projects {
         background: url("../Images/title_background_small_taller.png") no-repeat, url("../Images/projects_in_progress_thumbnail.png");
     }
     /* when the screen shrinks, the background image for the titles of the small project cards changes to a taller version as the text gets pushed down */
