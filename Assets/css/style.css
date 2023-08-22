@@ -190,9 +190,33 @@ sources that helped me understand media queries:
     border: var(--border_width) solid var(--border_color);
 }
 
+.challenge-5 {
+    background: url("../Images/title_background_small.png") no-repeat, url("../Images/challenge_5_thumbnail.png");
+
+    width: calc(var(--small_section_width) - 2*var(--border_width));
+    height: calc(var(--small_section_width) - 2*var(--border_width));
+    border: var(--border_width) solid var(--border_color);
+}
+
 .project-1 {
     background: url("../Images/title_background_small.png") no-repeat, url("../Images/project_1_thumbnail.png");
     
+    width: calc(var(--small_section_width) - 2*var(--border_width));
+    height: calc(var(--small_section_width) - 2*var(--border_width));
+    border: var(--border_width) solid var(--border_color);
+}
+
+.challenge-9 {
+    background: url("../Images/title_background_small.png") no-repeat, url("../Images/challenge_9_thumbnail.png");
+
+    width: calc(var(--small_section_width) - 2*var(--border_width));
+    height: calc(var(--small_section_width) - 2*var(--border_width));
+    border: var(--border_width) solid var(--border_color);
+}
+
+.project-2 {
+    background: url("../Images/title_background_small.png") no-repeat, url("../Images/project_2_thumbnail.png");
+
     width: calc(var(--small_section_width) - 2*var(--border_width));
     height: calc(var(--small_section_width) - 2*var(--border_width));
     border: var(--border_width) solid var(--border_color);
@@ -213,8 +237,17 @@ sources that helped me understand media queries:
     .challenge-3 {
         background: url("../Images/title_background_small_taller.png") no-repeat, url("../Images/challenge_3_thumbnail.png");
     }
+    .challenge-5 {
+        background: url("../Images/title_background_small_taller.png") no-repeat, url("../Images/challenge_5_thumbnail.png");
+    }
     .project-1 {
         background: url("../Images/title_background_small_taller.png") no-repeat, url("../Images/project_1_thumbnail.png");
+    }
+    .challenge-9 {
+        background: url("../Images/title_background_small_taller.png") no-repeat, url("../Images/challenge_9_thumbnail.png");
+    }
+    .project-2 {
+        background: url("../Images/title_background_small_taller.png") no-repeat, url("../Images/project_2_thumbnail.png");
     }
     .future-projects {
         background: url("../Images/title_background_small_taller.png") no-repeat, url("../Images/projects_in_progress_thumbnail.png");
