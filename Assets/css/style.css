@@ -222,6 +222,14 @@ sources that helped me understand media queries:
     border: var(--border_width) solid var(--border_color);
 }
 
+.project-3 {
+    background: url("../Images/title_background_small.png") no-repeat, url("../Images/project_3_thumbnail.png");
+
+    width: calc(var(--small_section_width) - 2*var(--border_width));
+    height: calc(var(--small_section_width) - 2*var(--border_width));
+    border: var(--border_width) solid var(--border_color);
+}
+
 .future-projects {
     background: url("../Images/title_background_small.png") no-repeat, url("../Images/projects_in_progress_thumbnail.png");
     
@@ -248,6 +256,9 @@ sources that helped me understand media queries:
     }
     .project-2 {
         background: url("../Images/title_background_small_taller.png") no-repeat, url("../Images/project_2_thumbnail.png");
+    }
+    .project-3 {
+        background: url("../Images/title_background_small_taller.png") no-repeat, url("../Images/project_3_thumbnail.png");
     }
     .future-projects {
         background: url("../Images/title_background_small_taller.png") no-repeat, url("../Images/projects_in_progress_thumbnail.png");
